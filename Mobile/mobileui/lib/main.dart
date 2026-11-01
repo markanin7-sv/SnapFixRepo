@@ -1,3 +1,4 @@
+import 'screen/new_report.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -148,7 +149,7 @@ class _SnapFixShellState extends State<SnapFixShell> {
       HomePage(
         reports: _reports,
         onReport: _showDetails,
-        onCreate: () => _open(SubmitReportPage(onSubmitted: _addReport)),
+        onCreate: () => _open(const NewReportScreen()),
       ),
       ReportsPage(reports: _reports, onReport: _showDetails),
       const SizedBox.shrink(),
@@ -295,3 +296,4 @@ class _SnapFixShellState extends State<SnapFixShell> {
     if (mounted) Navigator.pop(context);
   }
 }
+

@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/Admin/SnapFixRepo/Mobile/mobileui/windows"
+    "cmake.sourceDirectory": "C:/Users/Admin/SnapFixRepo/Mobile/mobileui/windows",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
